@@ -1,15 +1,5 @@
 # Pass for macOS Legacy
 
-![GitHub](https://img.shields.io/github/license/adur1990/Pass-for-macOS)
-![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/adur1990/Pass-for-macOS?include_prereleases&label=release)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/adur1990/Pass-for-macOS)
-![GitHub All Releases](https://img.shields.io/github/downloads/adur1990/Pass-for-macOS/total)
-
-![GitHub issues](https://img.shields.io/github/issues/adur1990/Pass-for-macOS)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/adur1990/Pass-for-macOS)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/adur1990/Pass-for-macOS)
-
 > Pass for macOS Legacy is a macOS wrapper for zx2c4's `pass`, the standard UNIX password manager. It retrieves your decrypted passwords for the current domain and allows you to auto-fill login forms.
 
 Pass for macOS Legacy consists of two parts.
