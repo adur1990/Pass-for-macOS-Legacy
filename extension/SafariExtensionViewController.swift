@@ -32,7 +32,7 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
     var resultsPasswords: [String]?
     
     @IBAction func startPassformacos(_ sender: Any) {
-        let bundlePath = NSWorkspace.shared.fullPath(forApplication: "Pass for macOS.app")
+        let bundlePath = NSWorkspace.shared.fullPath(forApplication: "Pass for macOS Legacy.app")
         NSWorkspace.shared.launchApplication(bundlePath!)
     }
     
@@ -59,7 +59,7 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
             shortcut = ""
         }
         
-        if item == "No matching password found." || item == "Pass for macOS is not running." {
+        if item == "No matching password found." || item == "Pass for macOS Legacy is not running." {
             password = ""
             login = ""
             message = item!
@@ -105,7 +105,7 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
         // Do not set the focus, if app is not running, no passwords where found or the shortcut was used.
         var fail: Bool = false;
         if resultsPasswords!.count == 1 {
-            if resultsPasswords![0] == "Pass for macOS is not running." {
+            if resultsPasswords![0] == "Pass for macOS Legacy is not running." {
                 startPassformacosButton.isHidden = false
                 height = height + 22
                 fail = true
@@ -151,6 +151,53 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
         if event.keyCode == 36 {
             // If the enter key was pressed, the selected password will be used for auto fill
             fillPasswordFromSelection()
+            return
+         }
+
+          let shiftKey = NSEvent.ModifierFlags.shift.rawValue
+         if (event.modifierFlags.rawValue & NSEvent.ModifierFlags.deviceIndependentFlagsMask.rawValue) == shiftKey {
+             if event.keyCode == 48 {
+                 iterBack()
+                 return
+             }
+         }
+
+          if event.keyCode == 48 {
+             iterNext()
+             return
+         }
+     }
+
+      func iterNext() {
+         let numberOfRows = searchResultsTable.numberOfRows - 1
+         let currentRow = searchResultsTable.selectedRow
+
+          if currentRow == numberOfRows {
+             searchResultsTable.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
+         }
+
+          if currentRow < numberOfRows {
+             searchResultsTable.selectRowIndexes(IndexSet(integer: currentRow + 1), byExtendingSelection: false)
+         } else {
+             searchField.becomeFirstResponder()
+         }
+     }
+
+      func iterBack() {
+         let numberOfRows = searchResultsTable.numberOfRows - 1
+         let currentRow = searchResultsTable.selectedRow
+
+          let nextRow = currentRow - 1
+
+          if nextRow == -1 {
+             searchResultsTable.selectRowIndexes(IndexSet(integer: numberOfRows), byExtendingSelection: false)
+             searchField.becomeFirstResponder()
+         }
+
+          if nextRow >= 0 {
+             searchResultsTable.selectRowIndexes(IndexSet(integer: nextRow), byExtendingSelection: false)
+         } else {
+             searchResultsTable.selectRowIndexes(IndexSet(integer: numberOfRows), byExtendingSelection: false)
         }
     }
     

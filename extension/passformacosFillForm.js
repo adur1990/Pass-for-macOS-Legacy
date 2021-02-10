@@ -16,10 +16,10 @@ safari.self.addEventListener("message", function (event) {
             if (event.message.login) {
                 toast("Filling password for ".concat(window.top.location.hostname));
             } else {
-                if (event.message.message == "Pass for macOS is not running.") {
+                if (event.message.message == "Pass for macOS Legacy is not running.") {
                     toast(event.message.message)
                 } else {
-                    toast("No matching password found for ".concat(window.top.location.hostname));
+                    toast("No password found for ".concat(window.top.location.hostname));
                 }
             }
         }

@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="GeneralPreferencesViewController" customModule="Pass_for_macOS" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="GeneralPreferencesViewController" customModule="Pass_for_macOS_Legacy" customModuleProvider="target">
             <connections>
                 <outlet property="recorderCell" destination="jPa-TM-cRP" id="yAF-4B-Fag"/>
                 <outlet property="view" destination="c22-O7-iKe" id="ZQe-UH-LCX"/>
@@ -32,8 +32,8 @@
                     </columns>
                     <gridCells>
                         <gridCell row="ukr-az-gqc" column="GGj-JC-w4E" id="sRb-hw-f4U">
-                            <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vt6-jC-8Jo">
-                                <rect key="frame" x="8" y="45" width="103" height="16"/>
+                            <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vt6-jC-8Jo">
+                                <rect key="frame" x="-2" y="68" width="103" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Global Shortcut:" id="uKy-ok-dDi">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -44,9 +44,9 @@
                         <gridCell row="ukr-az-gqc" column="cs9-fm-l2F" id="jPa-TM-cRP"/>
                         <gridCell row="gSl-iE-cwq" column="GGj-JC-w4E" id="IXl-mV-waK"/>
                         <gridCell row="gSl-iE-cwq" column="cs9-fm-l2F" id="yFx-k0-cPt">
-                            <textField key="contentView" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2E-pX-Fuo">
-                                <rect key="frame" x="117" y="0.0" width="335" height="14"/>
-                                <textFieldCell key="cell" selectable="YES" title="Specify a global shortcut to show the Pass for macOS popover." id="D9h-tf-tnk">
+                            <textField key="contentView" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="c2E-pX-Fuo">
+                                <rect key="frame" x="107" y="32" width="345" height="28"/>
+                                <textFieldCell key="cell" selectable="YES" title="Specify a global shortcut to show the Pass for macOS Legacy popover." id="D9h-tf-tnk">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

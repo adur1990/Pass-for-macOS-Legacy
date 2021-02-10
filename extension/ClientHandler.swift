@@ -25,7 +25,7 @@ class ClientHandler {
         defer { returnDataPtr.deallocate() }
         
         if remotePort == nil {
-            return ["Pass for macOS is not running."]
+            return ["Pass for macOS Legacy is not running."]
         }
         
         let status: sint32 = CFMessagePortSendRequest(remotePort, messageID, data, sendTimeout, recvTimeout, CFRunLoopMode.defaultMode.rawValue, returnDataPtr)

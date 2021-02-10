@@ -56,7 +56,7 @@
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn editable="NO" width="316" minWidth="40" maxWidth="1000" id="FEB-Fh-evc">
+                                                <tableColumn editable="NO" width="287" minWidth="40" maxWidth="1000" id="FEB-Fh-evc">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -106,7 +106,6 @@
                     </connections>
                 </viewController>
                 <customObject id="Sjr-2D-2fm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="JHd-O9-rJ9" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75" y="215"/>
         </scene>

@@ -30,7 +30,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
                 var login: String = ""
                 var message: String = ""
                 
-                if passwordToFill == "No matching password found." || passwordToFill == "Pass for macOS is not running." {
+                if passwordToFill == "No password found." || passwordToFill == "Pass for macOS Legacy is not running." {
                     password = ""
                     login = ""
                     message = passwordToFill

@@ -14,7 +14,6 @@ import Cocoa
 
 import SafariServices
 
-import Sparkle
 import KeyboardShortcuts
 import Preferences
 
@@ -31,7 +30,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var preferencesWindowController = PreferencesWindowController(
             preferencePanes: [
                 GeneralPreferencesViewController(),
-                UpdatePreferencesViewController()
             ],
             style: .segmentedControl
         )
@@ -49,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         let version = Bundle.main.infoDictionary?["CFBundleVersion"] as! String
         let versionItem = NSMenuItem()
-        versionItem.title = "Pass for macOS v\(version)"
+        versionItem.title = "Pass for macOS Legacy v\(version)"
         versionItem.isEnabled = false
 
         contextMenu.addItem(versionItem)
@@ -72,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func togglePopover(_ sender: Any?) {
         let event = NSApp.currentEvent!
-        if event.type == NSEvent.EventType.rightMouseUp {
+        if event.isContextClick {
             statusBarItem.popUpMenu(contextMenu)
         } else {
             if popover.isShown {
@@ -109,3 +107,11 @@ extension ViewController {
     return viewcontroller
   }
 }
+
+extension NSEvent {
+     var isContextClick: Bool {
+         let rightClick = (self.type == .rightMouseUp)
+         let controlClick = self.modifierFlags.contains(.control)
+         return rightClick || controlClick
+     }
+ }
