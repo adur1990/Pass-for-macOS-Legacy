@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "75E07BDB216E0D8D00EA9CBD"
-               BuildableName = "Pass for macOS.app"
+               BuildableName = "Pass for macOS Legacy.app"
                BlueprintName = "passformacos"
                ReferencedContainer = "container:passformacos.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75E07BDB216E0D8D00EA9CBD"
-            BuildableName = "Pass for macOS.app"
+            BuildableName = "Pass for macOS Legacy.app"
             BlueprintName = "passformacos"
             ReferencedContainer = "container:passformacos.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75E07BDB216E0D8D00EA9CBD"
-            BuildableName = "Pass for macOS.app"
+            BuildableName = "Pass for macOS Legacy.app"
             BlueprintName = "passformacos"
             ReferencedContainer = "container:passformacos.xcodeproj">
          </BuildableReference>

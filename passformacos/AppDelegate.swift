@@ -111,7 +111,7 @@ extension ViewController {
 extension NSEvent {
      var isContextClick: Bool {
          let rightClick = (self.type == .rightMouseUp)
-         let controlClick = self.modifierFlags.contains(.control)
+         let controlClick = (self.modifierFlags.contains(.control)) && (self.type == .leftMouseUp)
          return rightClick || controlClick
      }
  }
