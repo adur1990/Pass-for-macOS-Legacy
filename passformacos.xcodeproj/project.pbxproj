@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		7511A35E219B52B7008290E9 /* passformacosFillForm.js in Resources */ = {isa = PBXBuildFile; fileRef = 75E07C1C216E0DA700EA9CBD /* passformacosFillForm.js */; };
 		7511A361219B53C5008290E9 /* passformacosToast.css in Resources */ = {isa = PBXBuildFile; fileRef = 7511A360219B53C5008290E9 /* passformacosToast.css */; };
+		753782FA25E03AFB0066C710 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 753782F925E03AFB0066C710 /* KeyboardShortcuts */; };
 		7540890F25BB3F4500CC8A8A /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540890E25BB3F4500CC8A8A /* Shortcut.swift */; };
 		7540891525BD788900CC8A8A /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 7540891425BD788900CC8A8A /* Preferences */; };
 		7540891825BD796C00CC8A8A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540891725BD796C00CC8A8A /* Preferences.swift */; };
 		7540891B25BD79B200CC8A8A /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540891A25BD79B200CC8A8A /* GeneralPreferencesViewController.swift */; };
 		7540892125BD7EEB00CC8A8A /* GeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7540892025BD7EEB00CC8A8A /* GeneralPreferencesView.xib */; };
-		7540B90B25BAAA250051A116 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7540B90A25BAAA250051A116 /* KeyboardShortcuts */; };
 		7542023921A4904600124A19 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7542023821A4904600124A19 /* ToolbarItemIcon.pdf */; };
 		75494A0B218CCC7F00148925 /* ServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75494A0A218CCC7F00148925 /* ServerHandler.swift */; };
 		75494A0F218CCEBD00148925 /* ClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75494A0E218CCEBD00148925 /* ClientHandler.swift */; };
@@ -88,7 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7540891525BD788900CC8A8A /* Preferences in Frameworks */,
-				7540B90B25BAAA250051A116 /* KeyboardShortcuts in Frameworks */,
+				753782FA25E03AFB0066C710 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +185,8 @@
 			);
 			name = passformacos;
 			packageProductDependencies = (
-				7540B90A25BAAA250051A116 /* KeyboardShortcuts */,
 				7540891425BD788900CC8A8A /* Preferences */,
+				753782F925E03AFB0066C710 /* KeyboardShortcuts */,
 			);
 			productName = passformacos;
 			productReference = 75E07BDC216E0D8D00EA9CBD /* Pass for macOS Legacy.app */;
@@ -258,8 +258,8 @@
 			);
 			mainGroup = 75E07BD3216E0D8D00EA9CBD;
 			packageReferences = (
-				7540B90925BAAA250051A116 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */,
+				753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 75E07BDD216E0D8D00EA9CBD /* Products */;
 			projectDirPath = "";
@@ -478,7 +478,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = BR355MFMD5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,7 +490,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.artursterz.passformacos;
 				PRODUCT_NAME = "Pass for macOS Legacy";
 				PROVISIONING_PROFILE_SPECIFIER = "Pass for macOS";
@@ -507,7 +507,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = BR355MFMD5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +519,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.artursterz.passformacos;
 				PRODUCT_NAME = "Pass for macOS Legacy";
 				PROVISIONING_PROFILE_SPECIFIER = "Pass for macOS";
@@ -533,7 +533,7 @@
 				CODE_SIGN_ENTITLEMENTS = extension/extension.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = BR355MFMD5;
 				INFOPLIST_FILE = extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -542,7 +542,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.artursterz.passformacos.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Pass for macOS Extension";
@@ -557,7 +557,7 @@
 				CODE_SIGN_ENTITLEMENTS = extension/extension.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = BR355MFMD5;
 				INFOPLIST_FILE = extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,7 +566,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.artursterz.passformacos.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Pass for macOS Extension";
@@ -608,6 +608,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hank121314/KeyboardShortcuts";
+			requirement = {
+				kind = revision;
+				revision = 1aff570929238e3afde0abbadce9a17d4d362ffe;
+			};
+		};
 		7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Preferences";
@@ -616,26 +624,18 @@
 				minimumVersion = 2.2.0;
 			};
 		};
-		7540B90925BAAA250051A116 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		753782F925E03AFB0066C710 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
 		7540891425BD788900CC8A8A /* Preferences */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */;
 			productName = Preferences;
-		};
-		7540B90A25BAAA250051A116 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7540B90925BAAA250051A116 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
