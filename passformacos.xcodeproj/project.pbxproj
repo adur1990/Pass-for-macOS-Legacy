@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7511A35E219B52B7008290E9 /* passformacosFillForm.js in Resources */ = {isa = PBXBuildFile; fileRef = 75E07C1C216E0DA700EA9CBD /* passformacosFillForm.js */; };
 		7511A361219B53C5008290E9 /* passformacosToast.css in Resources */ = {isa = PBXBuildFile; fileRef = 7511A360219B53C5008290E9 /* passformacosToast.css */; };
-		753782FA25E03AFB0066C710 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 753782F925E03AFB0066C710 /* KeyboardShortcuts */; };
 		7540890F25BB3F4500CC8A8A /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540890E25BB3F4500CC8A8A /* Shortcut.swift */; };
 		7540891525BD788900CC8A8A /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 7540891425BD788900CC8A8A /* Preferences */; };
 		7540891825BD796C00CC8A8A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540891725BD796C00CC8A8A /* Preferences.swift */; };
@@ -18,6 +17,7 @@
 		7542023921A4904600124A19 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7542023821A4904600124A19 /* ToolbarItemIcon.pdf */; };
 		75494A0B218CCC7F00148925 /* ServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75494A0A218CCC7F00148925 /* ServerHandler.swift */; };
 		75494A0F218CCEBD00148925 /* ClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75494A0E218CCEBD00148925 /* ClientHandler.swift */; };
+		75592B0025E62570008F86C7 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 75592AFF25E62570008F86C7 /* KeyboardShortcuts */; };
 		756E0B9A2185F9DA0079B98C /* Passwordstore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E0B992185F9DA0079B98C /* Passwordstore.swift */; };
 		75E07BE0216E0D8D00EA9CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E07BDF216E0D8D00EA9CBD /* AppDelegate.swift */; };
 		75E07BE2216E0D8D00EA9CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E07BE1216E0D8D00EA9CBD /* ViewController.swift */; };
@@ -88,7 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7540891525BD788900CC8A8A /* Preferences in Frameworks */,
-				753782FA25E03AFB0066C710 /* KeyboardShortcuts in Frameworks */,
+				75592B0025E62570008F86C7 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +186,7 @@
 			name = passformacos;
 			packageProductDependencies = (
 				7540891425BD788900CC8A8A /* Preferences */,
-				753782F925E03AFB0066C710 /* KeyboardShortcuts */,
+				75592AFF25E62570008F86C7 /* KeyboardShortcuts */,
 			);
 			productName = passformacos;
 			productReference = 75E07BDC216E0D8D00EA9CBD /* Pass for macOS Legacy.app */;
@@ -259,7 +259,7 @@
 			mainGroup = 75E07BD3216E0D8D00EA9CBD;
 			packageReferences = (
 				7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */,
-				753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				75592AFE25E62570008F86C7 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 75E07BDD216E0D8D00EA9CBD /* Products */;
 			projectDirPath = "";
@@ -608,14 +608,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hank121314/KeyboardShortcuts";
-			requirement = {
-				kind = revision;
-				revision = 1aff570929238e3afde0abbadce9a17d4d362ffe;
-			};
-		};
 		7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Preferences";
@@ -624,18 +616,26 @@
 				minimumVersion = 2.2.0;
 			};
 		};
+		75592AFE25E62570008F86C7 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		753782F925E03AFB0066C710 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 753782F825E03AFB0066C710 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
-		};
 		7540891425BD788900CC8A8A /* Preferences */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7540891325BD788900CC8A8A /* XCRemoteSwiftPackageReference "Preferences" */;
 			productName = Preferences;
+		};
+		75592AFF25E62570008F86C7 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75592AFE25E62570008F86C7 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
